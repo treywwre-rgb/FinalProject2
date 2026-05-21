@@ -533,7 +533,7 @@ NAV BAR
     font-weight: 600;
 }
 
-.navbar .logo {
+.navbar img.logo {
     height: 40px;
     width: 150px;
 }
@@ -546,7 +546,7 @@ NAV BAR
 .content-wrapper {
     margin: 0 auto;
     width: 100%;
-    max-width: fit-content;
+    max-width: 1200px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -604,6 +604,13 @@ a.btn-contact {
     cursor: pointer;
 }
 
+.bento-menu>div[data-v-48b363cf] {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: #6030b1;
+}
+
 .close-btn[data-v-48b363cf] {
     pointer-events: none;
     position: absolute;
@@ -651,7 +658,7 @@ a.link[data-v-48b363cf] {
     }
 
     #phone-nav {
-        display: block !important;
+        display: block;
     }
 }
 
