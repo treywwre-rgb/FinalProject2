@@ -590,6 +590,7 @@ a.btn-contact {
 
 #phone-nav[data-v-48b363cf] {
     position: relative;
+    display: none;
 }
 
 .bento-menu[data-v-48b363cf] {
