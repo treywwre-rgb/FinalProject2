@@ -3,6 +3,12 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+section {
+    display: block;
+    unicode-bidi: isolate;
+}
+
 #app [data-v-5fdf2371] {
     min-height: 100vh;
     display: flex;
@@ -588,7 +594,7 @@ a.btn-contact {
 
 */
 
-#phone-nav[data-v-48b363cf] {
+#phone-nav {
     position: relative;
     display: none;
 }
@@ -623,6 +629,16 @@ a.btn-contact {
     cursor: pointer;
 }
 
+.close-btn[data-v-48b363cf]::before, .close-btn[data-v-48b363cf]::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #6030b1;
+}
+
 .showMenu[data-v-48b363cf] {
     transform: translateX(100%);
     opacity: 0;
@@ -646,10 +662,83 @@ a.link[data-v-48b363cf] {
     margin-bottom: 60px;
 }
 
+/*
+
+    LANDING PAGE
+
+*/
+
+#landing-page[data-v-2a11e7ca] {
+    max-width: 100vw;
+    overflow-x: hidden;
+    padding: 10px 20px 0 20px;
+    max-height: calc(100vh - 165px);
+    overflow: hidden;
+    display: flex;
+    flex: 1;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
+}
+
+.building[data-v-2a11e7ca] {
+    max-width: -webkit-max-content;
+    max-width: -moz-max-content;
+    max-width: max-content;
+    bottom: 80px;
+    height: 50vh;
+    position: absolute;
+}
+
+.car-wrapper[data-v-53a4c488] {
+    transform: translateX(0);
+    transition: all 2s ease-in-out;
+    z-index: 1000;
+    width: 100%;
+
+}
+
+h1[data-v-2a11e7ca] {
+    font-size: 57px;
+    max-width: 730px;
+    font-weight: 700;
+    line-height: 1.25;
+    color: #6030b1;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h2[data-v-2a11e7ca] {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #0a1f44;
+    text-transform: uppercase;
+    margin-bottom: 80px;
+    text-align: center;
+}
+
 @media screen and (max-height: 1200px) {
     .navbar[data-v-2a11e7ca] {
         height: 100px;
     }
+
+    #landing-page[data-v-2a11e7ca] {
+        max-height: none;
+    }
+
+    .building[data-v-2a11e7ca] {
+        bottom: 0;
+    }
+
+    h1[data-v-2a11e7ca] {
+        font-size: 50px;
+    }
+
+    h2[data-v-2a11e7ca] {
+        margin-bottom: 40px;
+    }
+    
 }
 
 @media screen and (max-width: 750px) {
@@ -659,6 +748,28 @@ a.link[data-v-48b363cf] {
 
     #phone-nav {
         display: block;
+    }
+}
+
+@media screen and (max-width: 585px) {
+    #landing-page[data-v-2a11e7ca] {
+        max-height: none;
+        padding: 10px 20px 40px 20px;
+    }
+
+    .building[data-v-2a11e7ca], 
+    .car-wrapper[data-v-2a11e7ca] {
+        display: none;
+    }
+
+    h1[data-v-2a11e7ca], 
+    h2[data-v-2a11e7ca] {
+        text-align: left;
+    }
+   
+    h2[data-v-2a11e7ca] {
+        font-size: 34px;
+        margin-bottom: 30px;
     }
 }
 
