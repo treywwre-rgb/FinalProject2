@@ -737,6 +737,16 @@ button.not-loading[data-v-2a11e7ca] {
     cursor: pointer;
 }
 
+button.not-loading[data-v-2a11e7ca]:hover {
+  background-color: #ff328f;
+  border: 1px solid #ff328f;
+}
+
+button.loading[data-v-2a11e7ca] {
+  background-color: #0a1f44;
+  cursor: no-drop;
+}
+
 button[data-v-2a11e7ca] {
   width: 200px;
   margin-left: 20px;
@@ -781,6 +791,10 @@ button[data-v-2a11e7ca] {
   bottom: 38.2%;
   left: 1.1%;  
   width: 6%;
+}
+
+.car-move {
+  transform: translateX(100vw);
 }
 
 .wheel[data-v-53a4c488] {
