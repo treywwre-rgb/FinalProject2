@@ -310,6 +310,22 @@ svg:not(:root).svg-inline--fa {
   margin-left: 0.3em;
 }
 
+
+.fa-spinner [data-v-cf78a876] {
+  -webkit-animation: rotate 1s linear infinite;
+   animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .fa-spin {
   -webkit-animation: fa-spin 2s infinite linear;
           animation: fa-spin 2s infinite linear;
