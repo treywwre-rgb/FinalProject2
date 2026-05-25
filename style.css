@@ -772,6 +772,24 @@ button[data-v-2a11e7ca] {
   transition: all .25 ease;
 }
 
+.searchBtn svg {
+  width: 24px;
+  height: 24px;
+}
+
+.searchBtn.loading svg {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 /*
     BUILDING AND CAR
 
