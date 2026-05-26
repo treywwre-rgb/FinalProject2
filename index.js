@@ -22,7 +22,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const response = await fetch(`https://www.omdbapi.com/?i=tt3896198&apikey=14489baa&s=${searchValue}`);
   const data = await response.json();
 
-  searchMovies();
+  console.log(data);
 }
+  searchMovies();
   });
 });
