@@ -829,6 +829,7 @@ button[data-v-2a11e7ca] {
 .movie-card img {
   border-radius: 10px 10px 0 0;
   width: 100%;
+  z-index: 999999;
 }
 
 
@@ -890,6 +891,24 @@ button[data-v-2a11e7ca] {
 .rotateWheel[data-v-53a4c488] {
   -webkit-animation: wheel-data-v-53a4c488 1s linear infinite;
   animation: wheel-data-v-53a4c488 1s linear infinite;
+}
+
+/*
+
+FOOTER
+
+*/
+
+.copyright[data-v-2a11e7ca] {
+    color: #0a1f44;
+    font-size: 18px;
+    font-weight: 600;
+    margin-right: 40px;
+}
+
+.socials[data-v-2a11e7ca] {
+    display: flex;
+    gap: 20px;
 }
 
 
