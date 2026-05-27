@@ -21,7 +21,8 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   function showMovieDetails(imdbID) {
-    console.log(imdbID);
+    localStorage.setItem("imdbID", imdbID);
+    window.location.href = `${window.location.imdbID}`;
   }
 
   async function searchMovies() {
