@@ -30,7 +30,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const response = await fetch(`https://www.omdbapi.com/?i=tt3896198&apikey=14489baa&s=${searchValue}`);
     const data = await response.json();
     const dataListEl = document.querySelector(".data-list");
-
+    if (!data.Search) {
+    dataListEl.innerHTML = "No movies found";
+    return;
+    }
     dataListEl.innerHTML = data.Search.map((response) => responseHTML(response)).join("");
   }
 
