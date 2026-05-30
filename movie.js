@@ -21,5 +21,10 @@ movieListEl.innerHTML = movies.Search.map((movie) => {
       <img src="${movie.Poster}" alt="${movie.Title}" />
       <h3>${movie.Title}</h3>
       <p>${movie.Year}</p>
+      <p>${movie.Genre}</p>
     </div>`
 }).join("")
+
+function filterMovies(event) {
+    console.log("event")
+}

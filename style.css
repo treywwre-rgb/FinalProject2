@@ -833,6 +833,14 @@ button[data-v-2a11e7ca] {
   z-index: 999999;
 }
 
+.movies__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+
+
 
 /*
     BUILDING AND CAR
