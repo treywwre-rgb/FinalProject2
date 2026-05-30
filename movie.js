@@ -15,6 +15,13 @@ async function main() {
 
 main();
 
+function renderMovies(filter) {
+
+
+if (filter === "Year") {
+    movies.sort((a, b) => a.Year - b.Year)
+}
+
 
 movieListEl.innerHTML = movies.Search.map((movie) => {
     return `<div class="movie">
@@ -24,7 +31,12 @@ movieListEl.innerHTML = movies.Search.map((movie) => {
       <p>${movie.Genre}</p>
     </div>`
 }).join("")
+}
 
 function filterMovies(event) {
-    console.log("event")
+    renderMovies(event.target.value)
 }
+
+setTimeout(() => {
+    renderMovies();
+});

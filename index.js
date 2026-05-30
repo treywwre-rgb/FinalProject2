@@ -2,7 +2,9 @@ function showMovieDetails(imdbID) {
   localStorage.setItem("imdbID", imdbID);
   window.location.href = `/movie.html?id=${imdbID}`;
 }
-
+  function filterMovies(event) {
+  console.log(event.target.value);
+}
 document.addEventListener("DOMContentLoaded", () => {
   feather.replace();
 
@@ -24,6 +26,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     searchMovies();
   });
+
+
 
   async function searchMovies() {
     const searchValue = searchInput.value;
